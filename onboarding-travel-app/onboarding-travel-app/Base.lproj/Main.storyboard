@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="onboarding_travel_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imTravel1" translatesAutoresizingMaskIntoConstraints="NO" id="ULd-Tu-ete">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULH-G6-Wbc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3tc-St-fad">
+                                        <rect key="frame" x="138.66666666666666" y="802" width="115.66666666666666" height="26"/>
+                                    </pageControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-8l-zra">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="802"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yTC-lc-yfW">
+                                                <rect key="frame" x="36" y="356" width="321" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Your Way" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-am-Ckm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="321" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore thousands of hotels and find the perfect accomodation!" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kp3-1W-4tl">
+                                                        <rect key="frame" x="0.0" y="38" width="321" height="52"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="yTC-lc-yfW" firstAttribute="centerY" secondItem="dgb-8l-zra" secondAttribute="centerY" id="20l-BK-VIg"/>
+                                            <constraint firstItem="yTC-lc-yfW" firstAttribute="leading" secondItem="dgb-8l-zra" secondAttribute="leading" constant="36" id="J6t-9Y-tvI"/>
+                                            <constraint firstItem="yTC-lc-yfW" firstAttribute="centerX" secondItem="dgb-8l-zra" secondAttribute="centerX" id="Owp-oi-icF"/>
+                                            <constraint firstAttribute="trailing" secondItem="yTC-lc-yfW" secondAttribute="trailing" constant="36" id="fqd-Ze-uSo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dgb-8l-zra" secondAttribute="trailing" id="2qQ-Px-Nmv"/>
+                                    <constraint firstItem="dgb-8l-zra" firstAttribute="top" secondItem="ULH-G6-Wbc" secondAttribute="top" id="QNM-yu-KVY"/>
+                                    <constraint firstAttribute="bottom" secondItem="3tc-St-fad" secondAttribute="bottom" constant="24" id="bPy-y6-XHL"/>
+                                    <constraint firstItem="dgb-8l-zra" firstAttribute="leading" secondItem="ULH-G6-Wbc" secondAttribute="leading" id="suF-va-Obh"/>
+                                    <constraint firstItem="3tc-St-fad" firstAttribute="centerX" secondItem="ULH-G6-Wbc" secondAttribute="centerX" id="vKY-TK-kLT"/>
+                                    <constraint firstItem="3tc-St-fad" firstAttribute="top" secondItem="dgb-8l-zra" secondAttribute="bottom" id="wWj-jN-6Mx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ULd-Tu-ete" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="8sd-q3-Jbp"/>
+                            <constraint firstItem="ULd-Tu-ete" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jfq-ox-jiE"/>
+                            <constraint firstItem="ULd-Tu-ete" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-59" id="Rba-QF-WHm"/>
+                            <constraint firstItem="ULd-Tu-ete" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SgL-8Z-WW9"/>
+                            <constraint firstItem="ULH-G6-Wbc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fM9-PQ-E5R"/>
+                            <constraint firstAttribute="bottom" secondItem="ULH-G6-Wbc" secondAttribute="bottom" id="nGr-aa-vMB"/>
+                            <constraint firstItem="ULH-G6-Wbc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pKg-5q-Btx"/>
+                            <constraint firstItem="ULH-G6-Wbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="poh-u2-McY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="ULd-Tu-ete" id="yDU-e7-UvH"/>
+                        <outlet property="darkView" destination="ULH-G6-Wbc" id="A22-q7-hYU"/>
+                        <outlet property="detailLabel" destination="Kp3-1W-4tl" id="iyc-UN-zfR"/>
+                        <outlet property="pageControl" destination="3tc-St-fad" id="GZs-V6-NLb"/>
+                        <outlet property="titleLabel" destination="ycd-am-Ckm" id="QqV-iZ-ZgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="4.9295774647887329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mws-iN-WUj">
+            <objects>
+                <viewController storyboardIdentifier="MainAppViewController" id="nDV-Mv-gFP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDi-vA-9pb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-zu-nTr">
+                                <rect key="frame" x="148.33333333333334" y="413" width="96.666666666666657" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N5e-iO-BRi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zFS-zu-nTr" firstAttribute="centerX" secondItem="xDi-vA-9pb" secondAttribute="centerX" id="5fc-KJ-zGf"/>
+                            <constraint firstItem="zFS-zu-nTr" firstAttribute="centerY" secondItem="xDi-vA-9pb" secondAttribute="centerY" id="Rbe-Mx-1Az"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amp-5C-7Ld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imTravel1" width="1609" height="2000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
