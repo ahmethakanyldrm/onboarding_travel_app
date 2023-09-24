@@ -22,9 +22,8 @@ You can open the project in Xcode or your preferred Swift development environmen
 
 ## Screenshots
 
-![Onboard Screen 1](screenshot1.png)
-![Onboard Screen 2](screenshot2.png)
-![Onboard Screen 3](screenshot3.png)
+[![Video Adı](ekranKaydı.mov)]
+
 
 ## Contributing
 
