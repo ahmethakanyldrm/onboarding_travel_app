@@ -1,12 +1,12 @@
 # Travel App Onboard Screen
 
 
-This project was created to enhance the onboard screen of the Ben Travel app using Swift and Storyboard. The onboard screen provides users with information to help them familiarize themselves with and use the application. It also includes interactive controls for navigating between screens.
+This project was created to enhance the onboard screen of the Travel app using Swift and Storyboard. The onboard screen provides users with information to help them familiarize themselves with and use the application. It also includes interactive controls for navigating between screens.
 
 ## Features
 
 - Swipe navigation for onboard screens.
-- Additional information with clickable labels on each page.
+- Additional information with clickable  on each page.
 - Page Control to inform the user about the current page.
 - Transition to another controller on the last onboard screen.
 
