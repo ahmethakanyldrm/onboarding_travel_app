@@ -20,9 +20,9 @@ You can open the project in Xcode or your preferred Swift development environmen
 4. Use the Storyboard to customize or add new onboard screens.
 5. Implement the necessary actions on the final onboard screen for transitioning.
 
-## Screenshots
+## Screen Recording
 
-[![Video Adı](ekranKaydı.mov)]
+[![Video Adı](screenRecording.gif)]
 
 
 ## Contributing
