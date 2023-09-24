@@ -36,7 +36,4 @@ I welcome your contributions. If you'd like to work on the project or make impro
 5. Push this new branch to your repository.
 6. Open a pull request, requesting that your changes be added to the main repository.
 
-## License
-
-This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
 
